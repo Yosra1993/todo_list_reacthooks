@@ -1,0 +1,23 @@
+.signIn {
+  width: 40% !important;
+  padding: 45px !important;
+  box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.18),
+    0px 1px 2px 1px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.badge {
+  border-radius: 0.2rem !important;
+  cursor: pointer;
+}
+.active {
+  font-weight: bold;
+}
+.empty-list {
+  padding: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+h3 {
+  font-family: initial;
+}
