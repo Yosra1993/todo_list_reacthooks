@@ -10,7 +10,7 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
+    <Router basename={"/todo_list_reacthooks"} history={history}> {/* Gh-pages deployment with react-router */}
       <App />
     </Router>
   </React.StrictMode>,
