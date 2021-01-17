@@ -17,7 +17,7 @@ function App() {
             <Redirect
               exact
               to={{
-                pathname: process.env.PUBLIC_URL + "/",
+                pathname: "/",
                 state: { from: location },
               }}
             />
@@ -33,12 +33,15 @@ function App() {
       <Switch>
         <Route
           exact
-          path={process.env.PUBLIC_URL + "/"}
+          path="/"
           render={(props) => <SignIn history={props.history} />}
         />
-        <PrivateRoute path={process.env.PUBLIC_URL + "/list-tasks"}>
+        <PrivateRoute path="/list-tasks">
           <ListTasks />
         </PrivateRoute>
+        {/* <Route exact path="/list-tasks">
+          <ListTasks />
+        </Route> */}
       </Switch>
     </div>
   );
