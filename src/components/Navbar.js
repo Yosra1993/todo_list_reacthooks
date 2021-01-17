@@ -28,12 +28,7 @@ const NavbarComponent = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink
-                to="/"
-                exact
-                activeClassName="active"
-                tag={NavLinkRoute}
-              >
+              <NavLink to="/" exact activeClassName="active" tag={NavLinkRoute}>
                 Home
               </NavLink>
             </NavItem>
@@ -49,7 +44,7 @@ const NavbarComponent = (props) => {
             </NavItem>
             <NavItem>
               <NavLink
-                href="/"
+                href="/todo_list_reacthooks/"
                 onClick={() => {
                   localStorage.removeItem("login");
                 }}
