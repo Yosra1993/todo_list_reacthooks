@@ -29,7 +29,7 @@ const NavbarComponent = (props) => {
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink
-                to={process.env.PUBLIC_URL + "/"}
+                to="/"
                 exact
                 activeClassName="active"
                 tag={NavLinkRoute}
@@ -39,7 +39,7 @@ const NavbarComponent = (props) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to={process.env.PUBLIC_URL + "/list-tasks"}
+                to="/list-tasks"
                 exact
                 activeClassName="active"
                 tag={NavLinkRoute}
@@ -49,7 +49,7 @@ const NavbarComponent = (props) => {
             </NavItem>
             <NavItem>
               <NavLink
-                href={process.env.PUBLIC_URL + "/"}
+                href="/"
                 onClick={() => {
                   localStorage.removeItem("login");
                 }}

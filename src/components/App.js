@@ -39,9 +39,6 @@ function App() {
         <PrivateRoute path="/list-tasks">
           <ListTasks />
         </PrivateRoute>
-        {/* <Route exact path="/list-tasks">
-          <ListTasks />
-        </Route> */}
       </Switch>
     </div>
   );
