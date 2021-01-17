@@ -28,13 +28,18 @@ const NavbarComponent = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink to="/" exact activeClassName="active" tag={NavLinkRoute}>
+              <NavLink
+                to={process.env.PUBLIC_URL + "/"}
+                exact
+                activeClassName="active"
+                tag={NavLinkRoute}
+              >
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                to="/list-tasks"
+                to={process.env.PUBLIC_URL + "/list-tasks"}
                 exact
                 activeClassName="active"
                 tag={NavLinkRoute}
@@ -44,7 +49,7 @@ const NavbarComponent = (props) => {
             </NavItem>
             <NavItem>
               <NavLink
-                href="/"
+                href={process.env.PUBLIC_URL + "/"}
                 onClick={() => {
                   localStorage.removeItem("login");
                 }}
